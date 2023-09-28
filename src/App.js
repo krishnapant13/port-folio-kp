@@ -1,5 +1,5 @@
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import PortFolio from "./components/PortFolio.jsx";
@@ -11,21 +11,23 @@ import Contact from "./components/Contact.jsx";
 import Blog from "./components/Blog.jsx";
 function App() {
   return (
-    <ColorProvider>
-      hello
-      <Opening />
-      <div className="App text-white">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/port" element={<PortFolio />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/blog" element={<Blog />} />
-        </Routes>
-      </div>
-      <Navigators />
-      <ColorPallet />
-    </ColorProvider>
+    <BrowserRouter>
+      <ColorProvider>
+        hello
+        <Opening />
+        <div className="App text-white">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/port" element={<PortFolio />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/blog" element={<Blog />} />
+          </Routes>
+        </div>
+        <Navigators />
+        <ColorPallet />
+      </ColorProvider>
+    </BrowserRouter>
   );
 }
 
