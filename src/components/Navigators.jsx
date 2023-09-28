@@ -99,10 +99,12 @@ const Navigators = () => {
                 backgroundColor: color,
               }}
             />
-            <p style={{ color: color }}>{indicatorText(active)}</p>
+            <p style={{ color: color }} className="md:block hidden">
+              {indicatorText(active)}
+            </p>
           </div>
 
-          <Link to="/portfolio" onClick={() => setActiveIndex(0)}>
+          <Link to="/" onClick={() => setActiveIndex(0)}>
             <FaHome
               size={17}
               className="m-2"
@@ -130,7 +132,9 @@ const Navigators = () => {
               color={active === 3 ? color : "white"}
             />
           </Link>
-          <div /* to="/blog" onClick={() => setActiveIndex(4)} */ className="opacity-30">
+          <div
+            /* to="/blog" onClick={() => setActiveIndex(4)} */ className="opacity-30"
+          >
             <TbBrandBlogger
               size={17}
               className="m-2"

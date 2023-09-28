@@ -21,25 +21,28 @@ const Home = () => {
           <div className="flex flex-col items-start justify-start md:p-5 p-1">
             <p className="text-[1.5em] font-[400] ">HI THERE! </p>
             <div className="flex">
-              <p className="md:text-[2.5em] text-[2em] font-[400] ">I'M &nbsp;</p>
-              <TypeAnimation
-                sequence={[
-                  "KRISHNA PANT",
-                  1000,
-                  "WEB DEVELOPER",
-                  1000,
-                  "ECOPHILE",
-                  1000,
-                ]}
-                wrapper="span"
-                speed={20}
-                className="md:text-[2.5em] text-[2em]"
-                style={{
-                  color: color,
-                  display: "inline-block",
-                }}
-                repeat={Infinity}
-              />
+              <p className="md:text-[2.5em] text-[2em] font-[400] ">
+                I'M &nbsp;
+              </p>
+              <span style={{ color: color }}>
+                <TypeAnimation
+                  sequence={[
+                    "KRISHNA PANT",
+                    1000,
+                    "WEB DEVELOPER",
+                    1000,
+                    "ECOPHILE",
+                    1000,
+                  ]}
+                  wrapper="span"
+                  speed={20}
+                  className="md:text-[2.5em] text-[2em] "
+                  style={{
+                    display: "inline-block",
+                  }}
+                  repeat={Infinity}
+                />
+              </span>
             </div>
             <p className="text-start text-[1em] md:w-[80%]">
               I'm a Freelance UI/UX Designer and Developer based in Kausani

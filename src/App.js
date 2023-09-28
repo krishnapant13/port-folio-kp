@@ -16,7 +16,6 @@ function App() {
       <Opening />
       <div className="App text-white">
         <Routes>
-          <Route path="/portfolio" element={<Home />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/port" element={<PortFolio />} />
