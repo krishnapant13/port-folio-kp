@@ -71,7 +71,7 @@ const Contact = () => {
             <p className="text-start">Instagram</p>
             <div className="flex justify-start items-center mt-2">
               <BsInstagram size={20} color={color} className="mr-4" />
-              <p>this.kp</p>
+              <p>nth__user</p>
             </div>
           </div>
           <div className="flex flex-col mt-6">
@@ -94,7 +94,7 @@ const Contact = () => {
                 <BsFacebook size={15} color={color} />
               </a>
               <a
-                href="https://www.instagram.com/this.kp/"
+                href="https://www.instagram.com/nth__user/"
                 target="_blank"
                 rel="noreferrer"
                 className={`border border-1 p-2 rounded-full mr-2`}
