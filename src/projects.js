@@ -2,6 +2,7 @@ const projects = [
   {
     name: " Multi-Vendor E-Shop",
     title: "The Oe Store",
+    tagName:"Under Develoment",
     description:
       "The Multi-Vendor E-Commerce Platform is a comprehensive web application designed to facilitate online shopping and sales between multiple vendors and customers. This platform allows users to browse, search for, purchase, and review products from various sellers. It includes user authentication, real-time communication using Socket.io, order tracking, online payment processing, and more.",
     Features: [
@@ -107,6 +108,7 @@ const projects = [
   {
     name: "Weather App",
     title: "Check different weather worldwide",
+    tagName:"Deployed",
     description:
       "The Multi-Vendor E-Commerce Platform is a comprehensive web application designed to facilitate online shopping and sales between multiple vendors and customers. This platform allows users to browse, search for, purchase, and review products from various sellers. It includes user authentication, real-time communication using Socket.io, order tracking, online payment processing, and more.",
     Features: [
@@ -183,8 +185,6 @@ const projects = [
     TechStack: {
       UIDesign:
         "XML:  Designed the user interface (UI) using XML, ensuring a user-friendly and visually appealing using different layouts.",
-      Backend:
-        "React.js, Redux (for state management), HTML, TailwindCss, JavaScript",
       Database:
         "To facilitate data storage and retrieval, I integrated Firebase, Google's cloud-based platform. Firebase provided real-time database capabilities, secure user authentication, and efficient cloud storage solutions.",
       MappingAndLocation:
@@ -192,11 +192,62 @@ const projects = [
     },
     imgUrl:
       "https://github.com/krishnapant13/collegeApp/blob/master/app/src/main/res/drawable/admin.jpg?raw=true",
-    duration: "3 months",
+    duration: "3 months (Apr-jun 2021)",
     deployed: false,
     android: true,
-    url: "https://krishnapant13.github.io/weather-app",
+    url: "https://github.com/krishnapant13/collegeApp.git",
     githubFE: "https://github.com/krishnapant13/collegeApp.git",
+  },
+  {
+    name: "VaccinationFinder",
+    title: "Find Vaccination centers nearby",
+    description:
+      "VaccinationFinder is your reliable companion in the fight against COVID-19. This Android app, built with Kotlin and powered by Firebase , simplifies the process of finding nearby vaccination centers. It offers a user-friendly interface and real-time data to help users quickly locate vaccination sites.",
+    Features: [
+      {
+        header: "Vaccination Center Locator:",
+        points: [
+          "Displays vaccination centers, making it easy for users to find the nearest one.",
+        ],
+      },
+      {
+        header: "Real-time Information:",
+        points: [
+          "Provide real-time details for each vaccination center, including center name, location (address and map), operating hours.",
+        ],
+      },
+      {
+        header: "Vaccine Availability",
+        points: [
+          "Show the availability status of different vaccines at each center, including the vaccine name.",
+        ],
+      },
+      {
+        header: "Pricing Information",
+        points: [
+          "Display the cost details for vaccines, indicating whether they are available for free or if there are associated charges.",
+        ],
+      },
+      {
+        header: "Age Limit and Eligibility",
+        points: [
+          "Specify age limits and eligibility criteria for each vaccination center, ensuring users meet the requirements.",
+        ],
+      },
+    ],
+    TechStack: {
+      UIDesign:
+        "XML:  Designed the user interface (UI) using XML, ensuring a user-friendly and visually appealing using different layouts.",
+      API:
+        "Used Cowin API.",
+    },
+    imgUrl:
+      "https://mpcthospital.in/wp-content/uploads/2021/03/left-1-561x454.jpg",
+    duration: "3 days (Jul 2021)",
+    deployed: false,
+    android: true,
+    url: "https://github.com/krishnapant13/FindVaccinationCenter",
+    githubFE: "https://github.com/krishnapant13/FindVaccinationCenter",
   },
 ];
 

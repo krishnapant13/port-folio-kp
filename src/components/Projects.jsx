@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { useColor } from "./ColorContext";
+import { BsBoxArrowUpRight } from "react-icons/bs";
 
 const Projects = ({ url, name, title }) => {
   const { color } = useColor();
+  const [hovered, setHovered] = useState(false);
   return (
-    <div className="flex flex-wrap justify-center items-center ">
+    <div
+      className="flex flex-wrap justify-center  relative"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
       <div className="w-[23em] h-[13em] text-transparent flex justify-center items-center rounded-[0.2em] cursor-pointer">
         <img
           src={url}
@@ -21,6 +27,9 @@ const Projects = ({ url, name, title }) => {
           <p className="text-center uppercase   font-Roboto">{title}</p>
         </div>
       </div>
+      {hovered && (
+        <BsBoxArrowUpRight size={25} className="absolute top-2 right-2" />
+      )}
     </div>
   );
 };

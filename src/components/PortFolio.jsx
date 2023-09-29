@@ -30,15 +30,13 @@ const PortFolio = () => {
           className={` hidden md:block h-[2px] w-[45px]`}
           style={{ backgroundColor: color }}
         />
-        <p className="md:px-5 uppercase">
-          A FEW RECENT DESIGN AND CODING PROJECTS. Contact to see more
-        </p>
+        <p className="md:px-5 uppercase">A FEW RECENT DESIGN AND CODING PROJECTS. Contact to see more</p>
         <div
           className={` hidden md:block h-[2px] w-[45px]`}
           style={{ backgroundColor: color }}
         />
       </div>
-      <div className="flex flex-wrap justify-center items-center mt-[2em]">
+      <div className="flex flex-wrap justify-center mt-[2em]">
         {projects.map((project, i) => (
           <div
             key={i}

@@ -29,7 +29,7 @@ const About = () => {
           style={{ backgroundColor: color }}
         />
         <p className="800px:px-5">
-          I DESIGN AND CODE BEAUTIFUL THINGS, AND I LOVE WHAT I DO.
+        Enthusiastic React developer exploring the MERN stack, eager to contribute to web projects
         </p>
         <div
           className={`  hidden 800px:block  h-[2px] w-[45px]`}
