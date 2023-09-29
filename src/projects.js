@@ -143,6 +143,61 @@ const projects = [
     url: "https://krishnapant13.github.io/weather-app",
     githubFE: "https://github.com/krishnapant13/weather-app",
   },
+  {
+    name: "CollegeConnect",
+    title: "Bringing Campus Resources to Your Fingertips",
+    description:
+      "Welcome to CollegeConnect, your ultimate companion for academic success and campus life! This powerful app is tailor-made for college students, providing a seamless way to access essential resources, connect with your college community, and excel in your studies. Say goodbye to the hassle of hunting for notes, searching for faculty information, or navigating campus branches - CollegeConnect has you covered.",
+    Features: [
+      {
+        header: "Course Notes Repository",
+        points: [
+          "Allow students to access and download course notes, lecture slides, and study materials uploaded by professors and peers.",
+        ],
+      },
+      {
+        header: "Faculty Directory",
+        points: [
+          "Provide a searchable database of faculty and staff members, including their contact information, office hours, and areas of expertise.",
+        ],
+      },
+      {
+        header: "Announcements and Notifications",
+        points: [
+          "Send push notifications for important announcements, class cancellations, deadlines, and campus news.",
+        ],
+      },
+      {
+        header: "Secure Login and Profile Management",
+        points: [
+          "Implement a secure authentication system and give students the ability to manage their profiles and privacy settings.",
+        ],
+      },
+      {
+        header: "Video Lecture Playback",
+        points: [
+          "Access and view video lectures and educational content directly within the app, offering a multimedia learning experience uploaded by the faculties.",
+        ],
+      },
+    ],
+    TechStack: {
+      UIDesign:
+        "XML:  Designed the user interface (UI) using XML, ensuring a user-friendly and visually appealing using different layouts.",
+      Backend:
+        "React.js, Redux (for state management), HTML, TailwindCss, JavaScript",
+      Database:
+        "To facilitate data storage and retrieval, I integrated Firebase, Google's cloud-based platform. Firebase provided real-time database capabilities, secure user authentication, and efficient cloud storage solutions.",
+      MappingAndLocation:
+        "The app seamlessly incorporated the Google Maps API, enabling users to access mapping, geolocation, and route-planning functionalities. This feature greatly enhanced the app's usability and convenience.",
+    },
+    imgUrl:
+      "https://github.com/krishnapant13/collegeApp/blob/master/app/src/main/res/drawable/admin.jpg?raw=true",
+    duration: "3 months",
+    deployed: false,
+    android: true,
+    url: "https://krishnapant13.github.io/weather-app",
+    githubFE: "https://github.com/krishnapant13/collegeApp.git",
+  },
 ];
 
 export default projects;

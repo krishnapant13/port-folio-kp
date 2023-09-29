@@ -146,25 +146,27 @@ const ProjectPreview = ({ visible, onClose, projectData }) => {
                 </div>
                 <p className="font-[500] uppercase text-start md:w-[80%] w-full">
                   {projectData?.duration}{" "}
-                  {!projectData.deployed && (
+                  {!projectData.deployed && !projectData?.android && (
                     <span className="text-red-500">(Under Development)</span>
                   )}
                 </p>
               </div>
             </div>
 
-            <div
-              className={`w-[10em] h-[3em] rounded-full flex justify-center items-center my-5 ${
-                projectData?.deployed && "cursor-pointer"
-              }`}
-              onClick={() => (projectData?.deployed ? setIframe(true) : "")}
-              style={{
-                backgroundColor: projectData?.deployed ? color : "#474747",
-              }}
-            >
-              <BsBoxArrowUpRight size={15} />
-              <span className=" text-white font-[400] mx-2">Preview</span>
-            </div>
+            {!projectData?.android && (
+              <div
+                className={`w-[10em] h-[3em] rounded-full flex justify-center items-center my-5 ${
+                  projectData?.deployed && "cursor-pointer"
+                }`}
+                onClick={() => (projectData?.deployed ? setIframe(true) : "")}
+                style={{
+                  backgroundColor: projectData?.deployed ? color : "#474747",
+                }}
+              >
+                <BsBoxArrowUpRight size={15} />
+                <span className=" text-white font-[400] mx-2">Preview</span>
+              </div>
+            )}
 
             <div
               className="w-[4em] h-[2em] absolute top-6 right-0 text-white cursor-pointer"
