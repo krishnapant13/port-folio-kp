@@ -307,7 +307,7 @@ const About = () => {
             />
             <div
               className=" absolute top-0 h-[1.8em] w-[2.8em] p-1 border-[0.1em] rounded-md"
-              style={{ borderColor: color, left: htmlSliderValue - 5 + "%" }}
+              style={{ borderColor: color, left: htmlSliderValue - 6 + "%" }}
             >
               <div
                 className="h-[0.5em] w-[0.5em] border-b-[0.1em] border-r-[0.1em] transform rotate-45 absolute top-[1.4em] left-[40%] bg-[#000]"
@@ -337,7 +337,7 @@ const About = () => {
             />
             <div
               className=" absolute top-0 h-[1.8em] w-[2.8em] p-1 border-[0.1em] rounded-md"
-              style={{ borderColor: color, left: htmlSliderValue - 5 + "%" }}
+              style={{ borderColor: color, left: htmlSliderValue - 6 + "%" }}
             >
               <div
                 className="h-[0.5em] w-[0.5em] border-b-[0.1em] border-r-[0.1em] transform rotate-45 absolute top-[1.4em] left-[40%] bg-[#000]"
@@ -367,7 +367,7 @@ const About = () => {
             />
             <div
               className=" absolute top-0 h-[1.8em] w-[2.8em] p-1 border-[0.1em] rounded-md"
-              style={{ borderColor: color, left: htmlSliderValue - 5 + "%" }}
+              style={{ borderColor: color, left: htmlSliderValue - 6 + "%" }}
             >
               <div
                 className="h-[0.5em] w-[0.5em] border-b-[0.1em] border-r-[0.1em] transform rotate-45 absolute top-[1.4em] left-[40%] bg-[#000]"
@@ -397,7 +397,7 @@ const About = () => {
             />
             <div
               className=" absolute top-0 h-[1.8em] w-[2.8em] p-1 border-[0.1em] rounded-md"
-              style={{ borderColor: color, left: 85 - 10 + "%" }}
+              style={{ borderColor: color, left: 85 - 6 + "%" }}
             >
               <div
                 className="h-[0.5em] w-[0.5em] border-b-[0.1em] border-r-[0.1em] transform rotate-45 absolute top-[1.4em] left-[40%] bg-[#000]"
@@ -427,7 +427,7 @@ const About = () => {
             />
             <div
               className=" absolute top-0 h-[1.8em] w-[2.8em] p-1 border-[0.1em] rounded-md"
-              style={{ borderColor: color, left: 60 - 5 + "%" }}
+              style={{ borderColor: color, left: 60 - 6 + "%" }}
             >
               <div
                 className="h-[0.5em] w-[0.5em] border-b-[0.1em] border-r-[0.1em] transform rotate-45 absolute top-[1.4em] left-[40%] bg-[#000]"
@@ -457,7 +457,7 @@ const About = () => {
             />
             <div
               className=" absolute top-0 h-[1.8em] w-[2.8em] p-1 border-[0.1em] rounded-md"
-              style={{ borderColor: color, left: 60 - 5 + "%" }}
+              style={{ borderColor: color, left: 60 - 6 + "%" }}
             >
               <div
                 className="h-[0.5em] w-[0.5em] border-b-[0.1em] border-r-[0.1em] transform rotate-45 absolute top-[1.4em] left-[40%] bg-[#000]"
@@ -488,13 +488,43 @@ const About = () => {
             />
             <div
               className=" absolute top-0 h-[1.8em] w-[2.8em] p-1 border-[0.1em] rounded-md"
-              style={{ borderColor: color, left: 90 - 5 + "%" }}
+              style={{ borderColor: color, left: 90 - 6 + "%" }}
             >
               <div
                 className="h-[0.5em] w-[0.5em] border-b-[0.1em] border-r-[0.1em] transform rotate-45 absolute top-[1.4em] left-[40%] bg-[#000]"
                 style={{ borderColor: color }}
               ></div>
               <p className="text-[0.8em]">{90}%</p>
+            </div>
+          </div>
+        </Grid>
+        <Grid item xs={12} sm={12} md={4} lg={4}>
+          <div className="flex flex-col relative m-2 mt-[2em]">
+            <p className=" uppercase text-start">Next.js</p>
+            <Slider
+              valueLabelDisplay="off"
+              defaultValue={75}
+              disabled
+              sx={{
+                height: "0.1em",
+                "& .MuiSlider-track": {
+                  border: "none",
+                  color: color,
+                },
+                "& .MuiSlider-thumb": {
+                  display: "none",
+                },
+              }}
+            />
+            <div
+              className=" absolute top-0 h-[1.8em] w-[2.8em] p-1 border-[0.1em] rounded-md"
+              style={{ borderColor: color, left: 75 - 6 + "%" }}
+            >
+              <div
+                className="h-[0.5em] w-[0.5em] border-b-[0.1em] border-r-[0.1em] transform rotate-45 absolute top-[1.4em] left-[40%] bg-[#000]"
+                style={{ borderColor: color }}
+              ></div>
+              <p className="text-[0.8em]">{75}%</p>
             </div>
           </div>
         </Grid>
@@ -519,7 +549,7 @@ const About = () => {
             />
             <div
               className=" absolute top-0 h-[1.8em] w-[2.8em] p-1 border-[0.1em] rounded-md"
-              style={{ borderColor: color, left: 70 - 5 + "%" }}
+              style={{ borderColor: color, left: 70 - 6 + "%" }}
             >
               <div
                 className="h-[0.5em] w-[0.5em] border-b-[0.1em] border-r-[0.1em] transform rotate-45 absolute top-[1.4em] left-[40%] bg-[#000]"
@@ -549,7 +579,7 @@ const About = () => {
             />
             <div
               className=" absolute top-0 h-[1.8em] w-[2.8em] p-1 border-[0.1em] rounded-md"
-              style={{ borderColor: color, left: 50 - 5 + "%" }}
+              style={{ borderColor: color, left: 50 - 6 + "%" }}
             >
               <div
                 className="h-[0.5em] w-[0.5em] border-b-[0.1em] border-r-[0.1em] transform rotate-45 absolute top-[1.4em] left-[40%] bg-[#000]"
