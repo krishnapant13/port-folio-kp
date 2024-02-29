@@ -352,7 +352,7 @@ const About = () => {
             <p className=" uppercase text-start">JavaScript</p>
             <Slider
               valueLabelDisplay="off"
-              defaultValue={htmlSliderValue}
+              defaultValue={60}
               disabled
               sx={{
                 height: "0.1em",
@@ -367,13 +367,13 @@ const About = () => {
             />
             <div
               className=" absolute top-0 h-[1.8em] w-[2.8em] p-1 border-[0.1em] rounded-md"
-              style={{ borderColor: color, left: htmlSliderValue - 6 + "%" }}
+              style={{ borderColor: color, left: 60 - 6 + "%" }}
             >
               <div
                 className="h-[0.5em] w-[0.5em] border-b-[0.1em] border-r-[0.1em] transform rotate-45 absolute top-[1.4em] left-[40%] bg-[#000]"
                 style={{ borderColor: color }}
               ></div>
-              <p className="text-[0.8em]">{htmlSliderValue}%</p>
+              <p className="text-[0.8em]">{60}%</p>
             </div>
           </div>
         </Grid>
@@ -442,7 +442,7 @@ const About = () => {
             <p className=" uppercase text-start">Mongo DB</p>
             <Slider
               valueLabelDisplay="off"
-              defaultValue={60}
+              defaultValue={40}
               disabled
               sx={{
                 height: "0.1em",
@@ -457,13 +457,13 @@ const About = () => {
             />
             <div
               className=" absolute top-0 h-[1.8em] w-[2.8em] p-1 border-[0.1em] rounded-md"
-              style={{ borderColor: color, left: 60 - 6 + "%" }}
+              style={{ borderColor: color, left: 40 - 6 + "%" }}
             >
               <div
                 className="h-[0.5em] w-[0.5em] border-b-[0.1em] border-r-[0.1em] transform rotate-45 absolute top-[1.4em] left-[40%] bg-[#000]"
                 style={{ borderColor: color }}
               ></div>
-              <p className="text-[0.8em]">{60}%</p>
+              <p className="text-[0.8em]">{40}%</p>
             </div>
           </div>
         </Grid>
@@ -473,7 +473,7 @@ const About = () => {
             <p className=" uppercase text-start">React</p>
             <Slider
               valueLabelDisplay="off"
-              defaultValue={90}
+              defaultValue={70}
               disabled
               sx={{
                 height: "0.1em",
@@ -488,47 +488,16 @@ const About = () => {
             />
             <div
               className=" absolute top-0 h-[1.8em] w-[2.8em] p-1 border-[0.1em] rounded-md"
-              style={{ borderColor: color, left: 90 - 6 + "%" }}
+              style={{ borderColor: color, left: 70 - 6 + "%" }}
             >
               <div
                 className="h-[0.5em] w-[0.5em] border-b-[0.1em] border-r-[0.1em] transform rotate-45 absolute top-[1.4em] left-[40%] bg-[#000]"
                 style={{ borderColor: color }}
               ></div>
-              <p className="text-[0.8em]">{90}%</p>
+              <p className="text-[0.8em]">{70}%</p>
             </div>
           </div>
         </Grid>
-        <Grid item xs={12} sm={12} md={4} lg={4}>
-          <div className="flex flex-col relative m-2 mt-[2em]">
-            <p className=" uppercase text-start">Next.js</p>
-            <Slider
-              valueLabelDisplay="off"
-              defaultValue={75}
-              disabled
-              sx={{
-                height: "0.1em",
-                "& .MuiSlider-track": {
-                  border: "none",
-                  color: color,
-                },
-                "& .MuiSlider-thumb": {
-                  display: "none",
-                },
-              }}
-            />
-            <div
-              className=" absolute top-0 h-[1.8em] w-[2.8em] p-1 border-[0.1em] rounded-md"
-              style={{ borderColor: color, left: 75 - 6 + "%" }}
-            >
-              <div
-                className="h-[0.5em] w-[0.5em] border-b-[0.1em] border-r-[0.1em] transform rotate-45 absolute top-[1.4em] left-[40%] bg-[#000]"
-                style={{ borderColor: color }}
-              ></div>
-              <p className="text-[0.8em]">{75}%</p>
-            </div>
-          </div>
-        </Grid>
-
         <Grid item xs={12} sm={12} md={4} lg={4}>
           <div className="flex flex-col relative m-2 mt-[2em]">
             <p className=" uppercase text-start">Express js</p>
