@@ -3,11 +3,12 @@ import { RxCross1 } from "react-icons/rx";
 
 const ProjectScreen = ({ url, name, onClose }) => {
   return (
-    <div className="bg-[#000000b7] z-[10] relative flex justify-center items-center">
+    <div className="bg-[#000000b9] z-[10] relative flex justify-center items-center">
       <iframe
         src={url} // Replace with the URL you want to display
         title={name}
-        className="w-[90%] h-screen "
+        width="1200"
+        height="600"
       />
       <RxCross1
         size={30}

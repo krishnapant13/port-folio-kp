@@ -99,9 +99,9 @@ const projects = [
     },
     imgUrl:
       "https://i.pinimg.com/564x/97/62/4e/97624e5f54a0ad5a2715351effc17ec0.jpg",
-    duration: "3 Months",
-    deployed: false,
-    url: "#",
+    duration: "6 Months",
+    deployed: true,
+    url: "https://krishnapant13.github.io/OEFE",
     githubFE: "https://github.com/krishnapant13/OEFE",
     githubBE: "https://github.com/krishnapant13/OEBE",
   },
@@ -242,7 +242,7 @@ const projects = [
         "Used Cowin API.",
     },
     imgUrl:
-      "https://mpcthospital.in/wp-content/uploads/2021/03/left-1-561x454.jpg",
+      "https://i.pinimg.com/736x/da/c2/d5/dac2d5dbd1298a769c2c53296b5895ef.jpg",
     duration: "3 days (Jul 2021)",
     deployed: false,
     android: true,

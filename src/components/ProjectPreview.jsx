@@ -146,8 +146,8 @@ const ProjectPreview = ({ visible, onClose, projectData }) => {
                 </div>
                 <p className="font-[500] uppercase text-start md:w-[80%] w-full">
                   {projectData?.duration}{" "}
-                  {!projectData.deployed && !projectData?.android && (
-                    <span className="text-red-500">(Under Development)</span>
+                  { !projectData?.android && (
+                    <span className="text-red-500">(Improving...)</span>
                   )}
                 </p>
               </div>
@@ -176,7 +176,7 @@ const ProjectPreview = ({ visible, onClose, projectData }) => {
             </div>
           </div>
           {iFrame && (
-            <div className="absolute w-full h-screen">
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
               <ProjectScreen
                 url={projectData.url}
                 name={projectData.name}
