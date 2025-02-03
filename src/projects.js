@@ -1,5 +1,6 @@
 import CarouselImg from "./assets/Carousel.png";
 import TrishulImg from "./assets/Trishul.png";
+import Taxi from "./assets/Taxi.png";
 
 const projects = [
   {
@@ -44,8 +45,7 @@ const projects = [
       UIDesign:
         "Used modern design principles and frameworks like Material UI, TailwindCSS,  React icons or react_packages.",
     },
-    imgUrl:
-      "https://i.pinimg.com/736x/65/07/bb/6507bb20efba5fc379672f269a0af804.jpg",
+    imgUrl:Taxi,
     duration: "",
     deployed: true,
     url: "https://uk-tour-travels.vercel.app/",
