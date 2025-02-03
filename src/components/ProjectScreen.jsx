@@ -5,10 +5,9 @@ const ProjectScreen = ({ url, name, onClose }) => {
   return (
     <div className="bg-[#000000b9] z-[10] relative flex justify-center items-center">
       <iframe
-        src={url} // Replace with the URL you want to display
+        src={url} 
         title={name}
-        width="1200"
-        height="600"
+        className="w-[90%] h-screen bg-white"
       />
       <RxCross1
         size={30}

@@ -7,10 +7,12 @@ import { PiHandCoinsBold } from "react-icons/pi";
 import github from "../assets/github.png";
 import ProjectScreen from "./ProjectScreen";
 import { useColor } from "./ColorContext";
+import { useNavigate } from "react-router-dom";
 
 const ProjectPreview = ({ visible, onClose, projectData }) => {
   const [iFrame, setIframe] = useState(false);
   const { color } = useColor();
+  const navigate = useNavigate();
   return (
     <div className="overflow-scroll ">
       {visible && (
@@ -119,15 +121,15 @@ const ProjectPreview = ({ visible, onClose, projectData }) => {
                 </div>
 
                 <div className="text-start  md:w-[80%] w-full">
-                  {projectData?.Features.map((feature, key) => (
+                  {projectData?.Features?.map((feature, key) => (
                     <p key={key}>
                       <span>
                         <strong style={{ color: color }}>
-                          {feature.header}&nbsp;&nbsp;
+                          {feature?.header}&nbsp;&nbsp;
                         </strong>
                       </span>
                       <span>
-                        {feature.points.map((point, index) => (
+                        {feature?.points.map((point, index) => (
                           <span key={index}>{point}</span>
                         ))}
                       </span>
@@ -136,35 +138,43 @@ const ProjectPreview = ({ visible, onClose, projectData }) => {
                 </div>
               </div>
               <div className="flex mt-4 md:flex-row items-center flex-col">
-                <div className="md:w-[20%]  w-full">
-                  <div className="flex justify-start items-center ">
-                    <RxLapTimer size={20} className="mr-2" color={color} />
-                    <p className="text-[1.2em] md:text-[1em] md:my-0 my-2">
-                      {"Duration:"}
-                    </p>
+                {projectData?.duration && (
+                  <div className="md:w-[20%]  w-full">
+                    <div className="flex justify-start items-center ">
+                      <RxLapTimer size={20} className="mr-2" color={color} />
+                      <p className="text-[1.2em] md:text-[1em] md:my-0 my-2">
+                        {"Duration:"}
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <p className="font-[500] uppercase text-start md:w-[80%] w-full">
-                  {projectData?.duration}{" "}
-                  { !projectData?.android && (
-                    <span className="text-red-500">(Improving...)</span>
-                  )}
-                </p>
+                )}
+                {projectData?.duration && (
+                  <p className="font-[500] uppercase text-start md:w-[80%] w-full">
+                    {projectData?.duration}{" "}
+                    {!projectData.deployed && !projectData?.android && (
+                      <span className="text-red-500">(Under Development)</span>
+                    )}
+                  </p>
+                )}
               </div>
             </div>
 
             {!projectData?.android && (
               <div
-                className={`w-[10em] h-[3em] rounded-full flex justify-center items-center my-5 ${
-                  projectData?.deployed && "cursor-pointer"
-                }`}
-                onClick={() => (projectData?.deployed ? setIframe(true) : "")}
+                className={`w-[10em] h-[3em] rounded-full flex justify-center items-center my-5 `}
+                onClick={() =>
+                  projectData?.deployed
+                    ? setIframe(true)
+                    : navigate(projectData?.route)
+                }
                 style={{
-                  backgroundColor: projectData?.deployed ? color : "#474747",
+                  backgroundColor: color,
                 }}
               >
                 <BsBoxArrowUpRight size={15} />
-                <span className=" text-white font-[400] mx-2">Preview</span>
+                <span className=" text-white font-[400] cursor-pointer mx-2">
+                  Preview
+                </span>
               </div>
             )}
 

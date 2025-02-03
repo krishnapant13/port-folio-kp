@@ -14,11 +14,15 @@ const Home = () => {
   return (
     <div className="relative w-full">
       <div className="w-full flex flex-col md:flex-row relative">
-        <div className="flex justify-center items-center md:w-1/2 w-[100%] md:my-0 my-10 md:h-[100vh] h-[50vh]">
-          <img src={dev} alt="" className="w-[30em] h-[30em]" />
+        <div className="flex justify-center items-center md:w-1/2 w-[100%] md:my-0 my-10 md:h-[100vh] h-[30vh]">
+          <img
+            src={dev}
+            alt=""
+            className="md:w-[30em] md:h-[30em] w-[20em] h-[20em]"
+          />
         </div>
-        <div className="w-full md:w-1/2 h-[50vh] md:h-[100vh] flex justify-start items-center mt-4 md:mt-0">
-          <div className="flex flex-col items-start justify-start md:p-5 p-1">
+        <div className="w-full md:w-1/2 h-[50vh] md:h-[100vh] flex md:justify-start justify-center items-center mt-4 md:mt-0">
+          <div className="flex flex-col items-center justify-center md:items-start md:justify-start md:p-5 p-1">
             <p className="text-[1.5em] font-[400] ">HI THERE! </p>
             <div className="flex">
               <p className="md:text-[2.5em] text-[2em] font-[400] ">
@@ -30,6 +34,8 @@ const Home = () => {
                     "KRISHNA PANT",
                     1000,
                     "WEB DEVELOPER",
+                    1000,
+                    "REACT DEVELOPER",
                     1000,
                     "ECOPHILE",
                     1000,
@@ -44,11 +50,11 @@ const Home = () => {
                 />
               </span>
             </div>
-            <p className="text-start text-[1em] md:w-[80%]">
-              I'm a Freelance UI/UX Designer and Developer based in Kausani
-              (Almora, Uttarakhand), India. I strive to build immersive and
-              beautiful web applications through carefully crafted code and
-              user-centric design. Have experience with MERN stack.
+            <p className="md:text-start text-center text-[1em] md:w-[80%]">
+              I'm a Freelance UI/UX Designer and Developer from Kausani (Almora,
+              Uttarakhand), based in Delhi, India. I strive to build immersive
+              and beautiful web applications through carefully crafted code,
+              user-centric design and css animations.
             </p>
             <div className="flex md:flex-row flex-col justify-start md:mb-0 mb-4 items-center w-full mt-[3em]">
               <Link to="/about">

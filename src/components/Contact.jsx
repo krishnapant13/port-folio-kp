@@ -12,26 +12,58 @@ import {
 import { GrMail } from "react-icons/gr";
 import { FaUser } from "react-icons/fa";
 import { BiSolidPaperPlane } from "react-icons/bi";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const { color } = useColor();
   const [name, setName] = useState("");
   const [eMail, setEmail] = useState("");
   const [mailMessage, setMessage] = useState("");
-  
+
+  // const sendMail = (e) => {
+  //   e.preventDefault();
+  //   const email = "krishnapant1303@gmail.com";
+  //   const subject = "MAIL FROM PORTFOLIO";
+  //   const message = mailMessage + "\n From \n" + name + "\n" + eMail;
+  //   const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
+  //     subject
+  //   )}&body=${encodeURIComponent(message)}`;
+  //   window.location.href = mailtoLink;
+  //   setEmail("");
+  //   setName("");
+  //   setMessage("");
+  // };
+
   const sendMail = (e) => {
     e.preventDefault();
-    const email = "krishnapant1303@gmail.com";
-    const subject = "MAIL FROM PORTFOLIO";
-    const message = mailMessage + "\n From \n" + name + "\n" + eMail;
-    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(message)}`;
-    window.location.href = mailtoLink;
-    setEmail("");
-    setName("");
-    setMessage("");
+
+    // Define your Email.js service and template IDs
+    const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+    const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const userId = process.env.REACT_APP_EMAILJS_USER_ID;
+
+    const templateParams = {
+      from_name: name,
+      from_email: eMail,
+      message: mailMessage,
+    };
+
+    // Send the email using Email.js
+    emailjs.send(serviceId, templateId, templateParams, userId).then(
+      (response) => {
+        console.log("Email sent successfully", response);
+        alert("Message sent successfully!");
+        setEmail("");
+        setName("");
+        setMessage("");
+      },
+      (error) => {
+        console.error("Email could not be sent", error);
+        alert("Failed to send the message. Please try again.");
+      }
+    );
   };
+
   return (
     <div className="800px:p-10 p-2 mt-3 800px:mt-0 items-center">
       <h2 className=" font-[800] text-[2em] 800px:text-[3em] font-Poppins">

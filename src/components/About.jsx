@@ -29,7 +29,8 @@ const About = () => {
           style={{ backgroundColor: color }}
         />
         <p className="800px:px-5">
-        Enthusiastic React developer exploring the MERN stack, eager to contribute to web projects
+          Enthusiastic React developer exploring the MERN stack, eager to
+          contribute to web projects
         </p>
         <div
           className={`  hidden 800px:block  h-[2px] w-[45px]`}
@@ -88,8 +89,8 @@ const About = () => {
                     <div className={` m-[0.5em]`}>Pant</div>
                     <div className={`m-[0.5em]`}>03-Dec-1999</div>
                     <div className={` m-[0.5em]`}>Indian</div>
-                    <div className={` m-[0.5em]`}>1.5 Years</div>
-                    <div className={` m-[0.5em]`}>Kausani, Almora</div>
+                    <div className={` m-[0.5em]`}>2+ Years</div>
+                    <div className={` m-[0.5em]`}>Delhi</div>
                   </div>
                 </div>
               </Grid>{" "}
@@ -185,14 +186,69 @@ const About = () => {
             <div className="flex flex-col justify-start items-center mt-1">
               <BsCircle color={color} size={15} />
               <div
+                className="md:h-[10em] h-[23em] w-[0.05em]"
+                style={{ backgroundColor: color }}
+              />
+            </div>
+            <div className="flex flex-col justify-start items-start">
+              <div className="flex justify-start items-center pl-[1em] md:pl-[2em] mb-[1em]">
+                <SlCalender size={13} color={color} />
+                <p className={`text-[1.2em] ml-1 `} style={{ color: color }}>
+                  Auguest 2023- Present
+                </p>
+              </div>
+              <div className="flex justify-start items-start pl-[2em]">
+                <p className="font-[500] uppercase text-start text-[0.9em]">
+                  Freelance Developer &nbsp; - &nbsp;
+                </p>
+              </div>
+              <div className="flex justify-start items-start pl-[3em] mt-2 text-[0.9em]">
+                <ul style={{ listStyleType: "disc" }}>
+                  <li className="text-start">
+                    Built and deployed a Hotel Management System
+                    <a
+                      href="https://www.trishulregency.in"
+                      style={{ color: color }}
+                      className="underline"
+                      target="_blank"
+                      rel="noopner noreferrer"
+                    >
+                      {" "}
+                      Trishul Regency Kausani
+                    </a>
+                  </li>{" "}
+                  <li className="text-start mt-1">
+                    Currently working on a Taxi Booking System
+                    <a
+                      href="https://uk-tour-travels.vercel.app"
+                      style={{ color: color }}
+                      className="underline"
+                      target="_blank"
+                      rel="noopner noreferrer"
+                    >
+                      {" "}
+                      Uttarakhand Tour & Travels
+                    </a>{" "}
+                    using Next.js..
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-start pl-[1em] md:pl-[8em]">
+            <div className="flex flex-col justify-start items-center mt-1">
+              <BsCircle color={color} size={15} />
+              <div
                 className="md:h-[23em] h-[33em] w-[0.05em]"
                 style={{ backgroundColor: color }}
               />
             </div>
             <div className="flex flex-col justify-start items-start">
               <div className="flex justify-start items-center pl-[1em] md:pl-[2em] mb-[1em]">
-                <SlCalender size={13} />
-                <p className="text-[0.9em] ml-1">Dec 2021- May 2023</p>
+                <SlCalender size={13} color={color} />
+                <p className="text-[1.2em] ml-1" style={{ color: color }}>
+                  Dec 2021- May 2023
+                </p>
               </div>
               <div className="flex justify-start items-start pl-[2em]">
                 <p className="font-[500] uppercase text-start text-[0.9em]">
@@ -235,7 +291,7 @@ const About = () => {
                 </ul>
               </div>
             </div>
-          </div>
+          </div>{" "}
         </Grid>
         <Grid item xs={12} sm={12} md={6} justifyContent="start">
           <p className="text-start font-[500] font-Poppins text-[1.5em] uppercase  md:pl-[2em] pl-[0.7em] md:mb-[1em] md:mt-0 mt-[2em] ">
@@ -367,7 +423,7 @@ const About = () => {
             />
             <div
               className=" absolute top-0 h-[1.8em] w-[2.8em] p-1 border-[0.1em] rounded-md"
-              style={{ borderColor: color, left: 60 - 6 + "%" }}
+              style={{ borderColor: color, left: htmlSliderValue - 6 + "%" }}
             >
               <div
                 className="h-[0.5em] w-[0.5em] border-b-[0.1em] border-r-[0.1em] transform rotate-45 absolute top-[1.4em] left-[40%] bg-[#000]"
@@ -457,7 +513,7 @@ const About = () => {
             />
             <div
               className=" absolute top-0 h-[1.8em] w-[2.8em] p-1 border-[0.1em] rounded-md"
-              style={{ borderColor: color, left: 40 - 6 + "%" }}
+              style={{ borderColor: color, left: 60 - 6 + "%" }}
             >
               <div
                 className="h-[0.5em] w-[0.5em] border-b-[0.1em] border-r-[0.1em] transform rotate-45 absolute top-[1.4em] left-[40%] bg-[#000]"
@@ -488,7 +544,7 @@ const About = () => {
             />
             <div
               className=" absolute top-0 h-[1.8em] w-[2.8em] p-1 border-[0.1em] rounded-md"
-              style={{ borderColor: color, left: 70 - 6 + "%" }}
+              style={{ borderColor: color, left: 90 - 6 + "%" }}
             >
               <div
                 className="h-[0.5em] w-[0.5em] border-b-[0.1em] border-r-[0.1em] transform rotate-45 absolute top-[1.4em] left-[40%] bg-[#000]"
@@ -498,6 +554,37 @@ const About = () => {
             </div>
           </div>
         </Grid>
+        <Grid item xs={12} sm={12} md={4} lg={4}>
+          <div className="flex flex-col relative m-2 mt-[2em]">
+            <p className=" uppercase text-start">Next.js</p>
+            <Slider
+              valueLabelDisplay="off"
+              defaultValue={30}
+              disabled
+              sx={{
+                height: "0.1em",
+                "& .MuiSlider-track": {
+                  border: "none",
+                  color: color,
+                },
+                "& .MuiSlider-thumb": {
+                  display: "none",
+                },
+              }}
+            />
+            <div
+              className=" absolute top-0 h-[1.8em] w-[2.8em] p-1 border-[0.1em] rounded-md"
+              style={{ borderColor: color, left: 30 - 6 + "%" }}
+            >
+              <div
+                className="h-[0.5em] w-[0.5em] border-b-[0.1em] border-r-[0.1em] transform rotate-45 absolute top-[1.4em] left-[30%] bg-[#000]"
+                style={{ borderColor: color }}
+              ></div>
+              <p className="text-[0.8em]">{40}%</p>
+            </div>
+          </div>
+        </Grid>
+
         <Grid item xs={12} sm={12} md={4} lg={4}>
           <div className="flex flex-col relative m-2 mt-[2em]">
             <p className=" uppercase text-start">Express js</p>

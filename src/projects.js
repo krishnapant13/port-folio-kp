@@ -1,8 +1,86 @@
+import CarouselImg from "./assets/Carousel.png";
+import TrishulImg from "./assets/Trishul.png";
+
 const projects = [
+  {
+    name: "Trishul Regency",
+    title: "Hotel Management Applicatoin for booking rooms and restaurent",
+    description:
+      "Hotel Management Applicatoin for booking rooms and restaurent",
+    Features: [
+      {
+        header: "Check Rooms",
+        points: ["Select different rooms as per the need and view."],
+      },
+      {
+        header: "Select Categories",
+        points: ["Select between categories from standard to deluxe rooms"],
+      },
+      {
+        header: "Direct connects",
+        points: [
+          "Add the details and a mail will be sent to the manager directly",
+        ],
+      },
+    ],
+    TechStack: {
+      FrontEnd: "React.js, HTML, TailwindCss, JavaScript",
+      UIDesign:
+        "Used modern design principles and frameworks like Material UI, TailwindCSS,  React icons or react_packages.",
+    },
+    imgUrl: TrishulImg,
+    duration: "",
+    deployed: true,
+    url: "https://www.trishulregency.in",
+    githubFE: "https://github.com/krishnapant13/TrishulRegency",
+  },
+  {
+    name: "Uttarakhand Tour & Travels",
+    title: "Texi booking service in Uttarakhand",
+    description:
+      "Book Texi from anywhere and get standard to luxury ride for tour and transfer",
+    TechStack: {
+      FrontEnd: "React.js, HTML, TailwindCss, JavaScript",
+      UIDesign:
+        "Used modern design principles and frameworks like Material UI, TailwindCSS,  React icons or react_packages.",
+    },
+    imgUrl:
+      "https://i.pinimg.com/736x/65/07/bb/6507bb20efba5fc379672f269a0af804.jpg",
+    duration: "",
+    deployed: true,
+    url: "https://uk-tour-travels.vercel.app/",
+    githubFE: "https://github.com/krishnapant13/TrishulRegency",
+  },
+  {
+    name: "Animated Carousel using Tailwind Css",
+    title: "Animated Custom Carousel",
+    tagName: "Deployed",
+    description:
+      "Animated custom carousel for displaying items and description about them. Change the item and description using the next and prev button in left bottom, it will change the item in slide, description about the item and color will change according the item theme color",
+    Features: [
+      {
+        header: "Item Display",
+        points: ["dispaly Items in attractive animated way."],
+      },
+      {
+        header: "Description with buy link",
+        points: [
+          "Users will read about the description of the item an directly add them to cart or anything with the custom button",
+        ],
+      },
+    ],
+    TechStack: {
+      FrontEnd: "React.js, HTML, TailwindCss, JavaScript",
+      UIDesign:
+        "Used modern design principles and frameworks like Material UI, TailwindCSS,  React icons or react_packages.",
+    },
+    imgUrl: CarouselImg,
+    route: "/juice-carousel",
+  },
   {
     name: " Multi-Vendor E-Shop",
     title: "The Oe Store",
-    tagName:"Under Develoment",
+    tagName: "Under Develoment",
     description:
       "The Multi-Vendor E-Commerce Platform is a comprehensive web application designed to facilitate online shopping and sales between multiple vendors and customers. This platform allows users to browse, search for, purchase, and review products from various sellers. It includes user authentication, real-time communication using Socket.io, order tracking, online payment processing, and more.",
     Features: [
@@ -108,7 +186,7 @@ const projects = [
   {
     name: "Weather App",
     title: "Check different weather worldwide",
-    tagName:"Deployed",
+    tagName: "Deployed",
     description:
       "The Multi-Vendor E-Commerce Platform is a comprehensive web application designed to facilitate online shopping and sales between multiple vendors and customers. This platform allows users to browse, search for, purchase, and review products from various sellers. It includes user authentication, real-time communication using Socket.io, order tracking, online payment processing, and more.",
     Features: [
@@ -145,6 +223,7 @@ const projects = [
     url: "https://krishnapant13.github.io/weather-app",
     githubFE: "https://github.com/krishnapant13/weather-app",
   },
+
   {
     name: "CollegeConnect",
     title: "Bringing Campus Resources to Your Fingertips",
@@ -238,11 +317,10 @@ const projects = [
     TechStack: {
       UIDesign:
         "XML:  Designed the user interface (UI) using XML, ensuring a user-friendly and visually appealing using different layouts.",
-      API:
-        "Used Cowin API.",
+      API: "Used Cowin API.",
     },
     imgUrl:
-      "https://i.pinimg.com/736x/da/c2/d5/dac2d5dbd1298a769c2c53296b5895ef.jpg",
+      "https://i.pinimg.com/736x/0e/76/8b/0e768bcd6ab51d8c31d9d6f83a37be23.jpg",
     duration: "3 days (Jul 2021)",
     deployed: false,
     android: true,
