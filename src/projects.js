@@ -1,8 +1,28 @@
 import CarouselImg from "./assets/Carousel.png";
 import TrishulImg from "./assets/Trishul.png";
+import CarouselVid from "./assets/BottleCarousel.mp4";
+import Eshop from "./assets/EShop.mp4";
+import Uk from "./assets/uk.mp4";
 import Taxi from "./assets/Taxi.png";
 
 const projects = [
+  {
+    name: "Uttarakhand Tour & Travels",
+    title: "Texi booking service in Uttarakhand",
+    description:
+      "Book Texi from anywhere and get standard to luxury ride for tour and transfer",
+    TechStack: {
+      FrontEnd: "Next.js, TailwindCss, TypeScript",
+      UIDesign:
+        "Used modern design principles and frameworks like Material UI, TailwindCSS,  React icons or react_packages.",
+    },
+    imgUrl: Taxi,
+    videoUrl: Uk,
+    duration: "",
+    deployed: true,
+    url: "https://www.uttarakhandtravelss.com",
+    githubFE: "https://github.com/krishnapant13/TrishulRegency",
+  },
   {
     name: "Trishul Regency",
     title: "Hotel Management Applicatoin for booking rooms and restaurent",
@@ -30,25 +50,10 @@ const projects = [
         "Used modern design principles and frameworks like Material UI, TailwindCSS,  React icons or react_packages.",
     },
     imgUrl: TrishulImg,
+    videoUrl: CarouselVid,
     duration: "",
     deployed: true,
     url: "https://www.trishulregency.in",
-    githubFE: "https://github.com/krishnapant13/TrishulRegency",
-  },
-  {
-    name: "Uttarakhand Tour & Travels",
-    title: "Texi booking service in Uttarakhand",
-    description:
-      "Book Texi from anywhere and get standard to luxury ride for tour and transfer",
-    TechStack: {
-      FrontEnd: "React.js, HTML, TailwindCss, JavaScript",
-      UIDesign:
-        "Used modern design principles and frameworks like Material UI, TailwindCSS,  React icons or react_packages.",
-    },
-    imgUrl:Taxi,
-    duration: "",
-    deployed: true,
-    url: "https://uk-tour-travels.vercel.app/",
     githubFE: "https://github.com/krishnapant13/TrishulRegency",
   },
   {
@@ -75,6 +80,7 @@ const projects = [
         "Used modern design principles and frameworks like Material UI, TailwindCSS,  React icons or react_packages.",
     },
     imgUrl: CarouselImg,
+    videoUrl: CarouselVid,
     route: "/juice-carousel",
   },
   {
@@ -177,6 +183,7 @@ const projects = [
     },
     imgUrl:
       "https://i.pinimg.com/564x/97/62/4e/97624e5f54a0ad5a2715351effc17ec0.jpg",
+    videoUrl: Eshop,
     duration: "6 Months",
     deployed: true,
     url: "https://krishnapant13.github.io/OEFE",
@@ -218,6 +225,7 @@ const projects = [
     },
     imgUrl:
       "https://i.pinimg.com/564x/2d/21/ad/2d21ad475d580b1cde1075bc43c3b9f4.jpg",
+    videoUrl: CarouselVid,
     duration: "3 Days",
     deployed: true,
     url: "https://krishnapant13.github.io/weather-app",
@@ -271,6 +279,7 @@ const projects = [
     },
     imgUrl:
       "https://github.com/krishnapant13/collegeApp/blob/master/app/src/main/res/drawable/admin.jpg?raw=true",
+    videoUrl: CarouselVid,
     duration: "3 months (Apr-jun 2021)",
     deployed: false,
     android: true,
@@ -321,6 +330,7 @@ const projects = [
     },
     imgUrl:
       "https://i.pinimg.com/736x/0e/76/8b/0e768bcd6ab51d8c31d9d6f83a37be23.jpg",
+    videoUrl: CarouselVid,
     duration: "3 days (Jul 2021)",
     deployed: false,
     android: true,

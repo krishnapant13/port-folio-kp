@@ -46,6 +46,7 @@ const PortFolio = () => {
             <Projects
               name={project.name}
               url={project.imgUrl}
+              videoUrl={project?.videoUrl}
               title={project.title}
             />
           </div>

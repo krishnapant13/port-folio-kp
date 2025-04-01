@@ -30,10 +30,13 @@ const ProjectPreview = ({ visible, onClose, projectData }) => {
           <div
             className={`800px:w-[50%] w-full bg-[#333]  p-6 overflow-scroll`}
           >
-            <img
-              src={projectData?.imgUrl}
+            <video
+              src={projectData?.videoUrl}
               alt={projectData?.name}
               className="w-full h-[22em] rounded-md object-contain"
+              autoPlay
+              muted
+              loop
             />
             <div className=" flex justify-between items-center">
               <h2
