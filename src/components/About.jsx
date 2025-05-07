@@ -220,7 +220,7 @@ const About = () => {
                   <li className="text-start mt-1">
                     Currently working on a Taxi Booking System
                     <a
-                      href="https://uk-tour-travels.vercel.app"
+                      href="https://www.uttarakhandtravelss.com"
                       style={{ color: color }}
                       className="underline"
                       target="_blank"
