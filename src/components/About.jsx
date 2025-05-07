@@ -89,8 +89,8 @@ const About = () => {
                     <div className={` m-[0.5em]`}>Pant</div>
                     <div className={`m-[0.5em]`}>03-Dec-1999</div>
                     <div className={` m-[0.5em]`}>Indian</div>
-                    <div className={` m-[0.5em]`}>2+ Years</div>
-                    <div className={` m-[0.5em]`}>Delhi</div>
+                    <div className={` m-[0.5em]`}>3+ Years</div>
+                    <div className={` m-[0.5em]`}>Mahipalpur,Delhi</div>
                   </div>
                 </div>
               </Grid>{" "}
